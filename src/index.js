@@ -4,7 +4,7 @@ import cli from './cli.js';
 const roundsCount = 3;
 
 const runGame = (gameDescription, getRoundData) => {
-  const userName = cli();
+  const PLAYER = cli();
 
   console.log(gameDescription);
 
@@ -17,10 +17,10 @@ const runGame = (gameDescription, getRoundData) => {
 
     if (userAnswer !== correctAnswer) {
       console.log(
-        `'${userAnswer}' Incorrecto! :( La respuesta correcta era '${correctAnswer}'.`,
+        `'${userAnswer}'Incorrecto! :( La respuesta correcta era '${correctAnswer}'.`,
       );
 
-      console.log(`Intentémoslo de nuevo, ${userName}!`);
+      console.log(`¡Intentémoslo de nuevo, ${PLAYER}!`);
 
       return;
     }
@@ -28,7 +28,7 @@ const runGame = (gameDescription, getRoundData) => {
     console.log('Correcto!');
   }
 
-  console.log(`¡Felicidades, ${userName}!`);
+  console.log(`¡Felicidades, ${PLAYER}!`);
 };
 
 export default runGame;

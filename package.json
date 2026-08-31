@@ -1,8 +1,22 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "description": "[![hexlet-check](https://github.com/onbeatkone/fullstack-javascript-project-98/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/onbeatkone/fullstack-javascript-project-98/actions)",
+  "homepage": "https://github.com/onbeatkone/fullstack-javascript-project-98#readme",
+  "bugs": {
+    "url": "https://github.com/onbeatkone/fullstack-javascript-project-98/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onbeatkone/fullstack-javascript-project-98.git"
+  },
+  "license": "ISC",
   "author": "Carlos Niebles",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
